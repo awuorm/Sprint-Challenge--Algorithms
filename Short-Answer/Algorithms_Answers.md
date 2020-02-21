@@ -29,10 +29,12 @@ c)
       Total = O(2n) + + O(2) => O(n)
 
 ## Exercise II
-    1. Define a function that takes 2 inputs. n - number of storeys in the building, f - a default argument that specifies the floor number where eggs start to break if dropped.
-    2. Define the base case. If n < f, then append the value 'dropped' to an initialized array 'eggs'.
-    3. Else recursively call the helper function
-    4. The helper function will have a loop that appends the word 'broken' to 'eggs'.
-    5. Subtract the value of 'broken' items in array from 'dropped' items. The value will be the floor number with the least amount of dropped + broken eggs
+    1. Define a function that takes 2 inputs. n - number of storeys in the building, f - a default argument that specifies the floor number where eggs start to break if dropped. O(n)
+    2. Define the base case. If n < f, then append the value 'dropped' to an initialized array 'eggs'. O(1) + O(1)
+    3. Else recursively call the helper function O(1) + O(n)
+    4. The helper function will have a loop that appends the word 'broken' to 'eggs'.  O(n) + O(n) + O(1)
+    5. Subtract the value of 'broken' items in array from 'dropped' items. The value will be the floor number with the least amount of dropped + broken eggs O(1)
+
+    Total = O(4n) + O(5) => O(n)
 
 
